@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Page2">
+
+    <TextView
+        android:id="@+id/p2_lb1"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="293dp"
+        android:layout_marginBottom="37dp"
+        android:text="UserName :"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/p2_lb2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/p2_lb2"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="293dp"
+        android:layout_marginBottom="542dp"
+        android:text="Password :"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p2_lb1" />
+
+    <TextView
+        android:id="@+id/p2_tv_un"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="126dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="575dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/p2_lb1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/p2_tv_pa"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="468dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/p2_lb2"
+        app:layout_constraintTop_toBottomOf="@+id/p2_tv_un"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/p2_bt_lgot"
+        android:layout_width="188dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="126dp"
+        android:layout_marginEnd="114dp"
+        android:layout_marginBottom="286dp"
+        android:text="Logout"
+        android:onClick="logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p2_lb2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
